@@ -1,0 +1,9 @@
+[Unit]
+Description=X11 tray bridge for GNOME Status Tray
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/lib/gnome-xembed-tray/xembedsniproxy
+Restart=on-failure
+RestartSec=5

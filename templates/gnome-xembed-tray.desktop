@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=X11 Tray Bridge
+Comment=Forward legacy X11 tray icons to GNOME Status Tray
+Exec=systemctl --user start gnome-xembed-tray.service
+OnlyShowIn=GNOME;
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
